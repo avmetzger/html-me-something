@@ -1,29 +1,60 @@
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 100%;
+    font-size: 1em;
     line-height: 1.4;
-    background-color: lightslategray;
+    background-color: darkseagreen;
+    background-image: url("./images/treeACNL.png");
+    background-position: top;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: 50%;
 }
-.content{
+.content {
     margin-left: 10%;
     margin-right: 10%;
-    padding: 10px 75px;
-    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 250, 240, .85);
+    box-shadow: 2px 2px 8px black;
+}
+#intro {
+    font-size: 1.2em;
+    margin: 8%;
+    padding: 20px;
+    border: 1px;
+    border-style: solid;
+    border-color: burlywood;
+    border-radius: 10px;
 }
 h1 {
-    font-size: 32px;
-    padding-block-end: 10px;
+    font-size: 2em;
+    text-align: left;
+    color: floralwhite;
+    text-shadow: 2px 2px 8px black;
+    font-variant-caps: petite-caps;
+    padding: 10px 16px;
+    margin-bottom: 10px;
 }
 h2 {
-    font-size: 24px;
+    font-size: 1.5em;
+    font-variant-caps: petite-caps;
+    margin-bottom: 12px;
 }
 li a {
     display: block;
     padding: 8px 16px;
+}
+li {
     border-bottom:1px;
     border-style: solid;
-    border-color: lightgray;
+    border-color: floralwhite;
     text-align: center;
+}
+li:last-child {
+    border-bottom: none;
 }
 a:link {
      color: black;
@@ -35,48 +66,57 @@ a:visited {
 }
 a:hover{
     background-color: white;
-    color: lightslategray;  
+    background-clip: border-box;
+    color: darkseagreen;  
 }
 a:active {
-    background-color: lightslategray;
+    background-color: darkseagreen;
     color:white;
 }
 nav {
-    padding-top: 10px;
-    margin-top: -10px;
-    width:10%;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
-    background-color: lightslategray;
+    display: block;
+    float: left;
+    width:9%;
+    position: sticky;
+    top: 0px;
+    background-color: darkseagreen;
     box-shadow: 2px 2px 8px black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 img {
     margin: auto;
+    margin-bottom: 16px;
     display: block;
-    box-shadow: 2px 2px 5px black;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    max-width: 90%;
+    height: 100%;
+    overflow: auto;
 }
 figure {
-    margin: auto;
-    font-display: block;
-    font-size: 80%;
-    padding-block-end: 20px;
+    max-width: 400px;
+    text-align: center;
+    font-size: 0.8em;
+    margin: 10px;
+    float: right;
+    overflow: auto;
 }
 p {
     text-align: justify;
-    padding-block-end: 20px;
+    margin-bottom: 16px;
+    text-indent: 4ch;
 }
 section {
     border-top: 1px;
     border-style: solid;
-    border-color: lightgray;
-    padding: 20px;
-    padding-bottom: 0px;
-    margin-bottom: 10px;
+    border-color: burlywood;
+    margin-bottom: 0px;
 }
 footer {
-    font-size: 80%;
-    text-align: center;
+    font-size: 0.8em;
+    text-align: right;
+    padding: 10px 10px;
+    margin: 10px 10px 10px 50%;
+    background-color: rgba(255,250,240, .85);
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px black;
 }
